@@ -1,0 +1,110 @@
+/* General styling reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('images/Miraculous.jpg') no-repeat center center fixed; /* Use a Miraculous-themed background */
+    background-size: cover;
+    color: #333;
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Header styling */
+header {
+    background-color: #ff4c6d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive; /* Cursive-like font for header */
+}
+
+/* Chat box styling */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message styling */
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* User's message styling */
+.user-message {
+    align-self: flex-end;
+    background-color: #ffb3c1;
+    color: #333;
+}
+
+/* Miraculous AI's message styling */
+.miraculous-message {
+    align-self: flex-start;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ff4c6d;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Input and button styling */
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#send-button {
+    background-color: #ff4c6d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #ff2e4f;
+}
+
+/* File input icon */
+.attach-icon {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
